@@ -27,3 +27,5 @@ def premium_spread(strike: float, premium: float, buy: bool, call: bool) -> pd.D
 
     return pd.DataFrame({'Spot': x, 'Value': y})
 
+
+print(premium_spread(5500, 140, False, False).join(premium_spread(5500, 100, True, True).rename(columns={'Spot': 'Spot1', 'Value': 'Value1'})).iloc[200:201,])

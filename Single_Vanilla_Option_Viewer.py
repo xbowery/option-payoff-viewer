@@ -1,7 +1,10 @@
 import streamlit as st
 import functions
 
+st.set_page_config(page_title="Vanilla Option Payoff Viewer", page_icon="📈")
+
 st.title('Vanilla Option Payoff Viewer')
+st.sidebar.header("Vanilla Option Payoff Viewer")
 st.text('Enter the details of the option contract to view the payoff')
 
 strike = st.number_input('Strike Price', min_value=0.00, step=0.01)
