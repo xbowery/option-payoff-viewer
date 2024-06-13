@@ -2,10 +2,10 @@ import streamlit as st
 import functions
 
 
-st.set_page_config(page_title="Multiple Vanilla Options Payoff Viewer", page_icon="📈")
+st.set_page_config(page_title="Multi Legged Vanilla Options Payoff Viewer", page_icon="📈")
 
-st.title('Multiple Vanilla Options Payoff Viewer')
-st.sidebar.header("Multiple Vanilla Options Payoff Viewer")
+st.title('Multi Legged Vanilla Options Payoff Viewer')
+st.sidebar.header("Multi Legged Vanilla Options Payoff Viewer")
 
 if "disabled" not in st.session_state:
     st.session_state["disabled"] = False
